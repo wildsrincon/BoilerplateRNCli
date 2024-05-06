@@ -8,7 +8,4 @@ module.exports = {
   arrowParens: 'avoid',
   useTabs: false,
   tabWidth: 2,
-  importOrderSortSpecifiers: true,
-  importOrderSeparation: true,
-  importOrder: ['^react', '<THIRD_PARTY_MODULES>', '^../(.*)$', '^[./]'],
 };

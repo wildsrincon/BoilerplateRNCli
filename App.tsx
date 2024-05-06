@@ -1,23 +1,8 @@
+import { HomeScreen } from './src/screens/Home';
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
+
+const a = 12;
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.headerText}>Boilerplate RN CLI</Text>
-    </View>
-  );
+  return <HomeScreen />;
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  headerText: {
-    fontSize: 20,
-    fontWeight: 'bold',
-  },
-});
