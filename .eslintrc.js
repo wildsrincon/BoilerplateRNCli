@@ -12,8 +12,8 @@ module.exports = {
     'plugin:@typescript-eslint/eslint-recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:prettier/recommended',
-    "plugin:jest/recommended",
-    'plugin:testing-library/react'
+    'plugin:jest/recommended',
+    'plugin:testing-library/react',
   ],
   parserOptions: {
     ecmaVersion: 'latest',
@@ -23,18 +23,12 @@ module.exports = {
       jsx: true,
     },
   },
-  plugins: [
-    'react',
-    'react-native',
-    'react-hooks',
-    'unused-imports',
-    '@typescript-eslint',
-  ],
+  plugins: ['react', 'react-native', 'react-hooks', 'unused-imports', '@typescript-eslint'],
   overrides: [
     {
       // Test files only
       files: ['**/__tests__/**/*.[jt]s?(x)', '**/?(*.)+(spec|test).[jt]s?(x)'],
-    }
+    },
   ],
   rules: {
     'prettier/prettier': 2,
