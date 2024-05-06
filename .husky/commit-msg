@@ -1,1 +1,6 @@
-yarn commitlint --edit 
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+echo '🏗️👷 Checking implement conventional commits in yours commits'
+
+yarn commitlint --edit $1
