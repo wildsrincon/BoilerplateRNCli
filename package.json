@@ -4,11 +4,8 @@
   "private": true,
   "scripts": {
     "android": "react-native run-android",
-    "check-format": "npx prettier --check .",
-    "check-lint": "npx eslint . --ext ts --ext tsx --ext js",
-    "check-types": "npx tsc --pretty --noEmit",
-    "fix": "npx eslint . --fix --ext ts --ext tsx --ext js",
-    "format": "npx prettier --write .",
+    "check-lint": "yarn biome lint --apply .",
+    "format": "yarn biome format --write .",
     "ios": "react-native run-ios",
     "prepare": "husky install",
     "start": "react-native start",
